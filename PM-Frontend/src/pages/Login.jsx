@@ -27,7 +27,7 @@ function Login() {
     e.preventDefault()
 
     try {
-      const res = await fetch('http://localhost/PM-Backend/login.php', {
+      const res = await fetch('http://localhost/PM-Backend/PM-backend/login.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
