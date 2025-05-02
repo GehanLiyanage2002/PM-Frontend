@@ -1,4 +1,4 @@
-import {
+import { 
   Box,
   Button,
   FormControl,
@@ -77,8 +77,16 @@ function Register() {
             />
           </FormControl>
           {error && <Text color="red.500">{error}</Text>}
-          <Button colorScheme="blue" type="submit" width="full">
+          <Button colorScheme="green" type="submit" width="full">
             Register
+          </Button>
+          <Button
+            variant="link"
+            colorScheme="blue"
+            onClick={() => navigate('/login')}
+            mt={2}
+          >
+            Already have an account? Login
           </Button>
         </VStack>
       </form>

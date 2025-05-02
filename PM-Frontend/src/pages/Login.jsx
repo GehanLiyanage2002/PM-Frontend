@@ -66,6 +66,14 @@ function Login() {
           <Button colorScheme="green" type="submit" width="full">
             Login
           </Button>
+          <Button
+            variant="link"
+            colorScheme="blue"
+            onClick={() => navigate('/register')}
+            mt={2}
+          >
+            Don&apos;t have an account? Create one
+          </Button>
         </VStack>
       </form>
     </Box>
